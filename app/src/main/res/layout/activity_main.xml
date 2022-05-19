@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_modelYili"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/editText_modelYili"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="101dp"
+        android:text="model yılı"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toStartOf="@+id/editText_modelYili"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_model" />
+
+    <TextView
+        android:id="@+id/textview_model"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/editText_modelYili"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="8dp"
+        android:text="model"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/textView_modelYili"
+        app:layout_constraintEnd_toStartOf="@+id/editText_model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Id" />
+
+    <EditText
+        android:id="@+id/editText_modelYili"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/textView_modelYili"
+        android:layout_marginBottom="78dp"
+        android:layout_toEndOf="@+id/textView_modelYili"
+        android:layout_toRightOf="@+id/textView_modelYili"
+        app:layout_constraintBottom_toTopOf="@+id/button_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_modelYili"
+        app:layout_constraintTop_toBottomOf="@+id/editText_model" />
+
+    <EditText
+        android:id="@+id/editText_model"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/editText_modelYili"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/textview_model"
+        android:layout_toRightOf="@+id/textview_model"
+        app:layout_constraintBottom_toTopOf="@+id/editText_modelYili"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_model"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Id" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/editText_model"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="267dp"
+        android:text="KAYIT EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_viewAll"
+        app:layout_constraintTop_toBottomOf="@+id/button_update" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/button_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="56dp"
+        android:text="KAYITLARI GÖSTER"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/button_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/button_add"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="34dp"
+        android:text="GÜNCELLE"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_delete"
+        app:layout_constraintTop_toBottomOf="@+id/editText_modelYili" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/button_viewAll"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:layout_alignLeft="@+id/button_viewAll"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="34dp"
+        android:text="SİL"
+        app:layout_constraintBottom_toTopOf="@+id/button_viewAll"
+        app:layout_constraintEnd_toStartOf="@+id/button_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelYili" />
+
+    <TextView
+        android:id="@+id/textView_Id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/editText_model"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="ID"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/textview_model"
+        app:layout_constraintEnd_toStartOf="@+id/editText_Id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/textView_Id"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toEndOf="@+id/textview_model"
+        android:layout_toRightOf="@+id/textview_model"
+        app:layout_constraintBottom_toTopOf="@+id/editText_model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_Id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="164dp"
+        android:text="AHMET BATMAN"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_viewAll" />
+</androidx.constraintlayout.widget.ConstraintLayout>
